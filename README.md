@@ -23,12 +23,13 @@ Reducir al mínimo el esfuerzo de llevar el control del dinero. La mayoría de a
 ## Alcance inicial
 
 - API REST con autenticación y endpoint para registrar gastos (`POST /gastos`).
-- Registro manual de gastos desde el panel web.
+- Registro manual de gastos desde el panel web, como base del sistema y alternativa cuando la captura automática no esté disponible.
+- Captura automática de pagos desde Android mediante una automatización que envía los datos a la API (se implementa tras el registro manual).
 - Base de datos con gastos y ajustes de usuario.
 - Panel web en Angular con:
-  - Historial de gastos (importe, comercio, fecha, categoría).
-  - Total por periodo.
-  - Análisis de pequeños gastos frecuentes (gasto hormiga), con el importe límite configurable por el usuario.
+- Historial de gastos (importe, comercio, fecha, categoría).  
+- Total por periodo.
+- Análisis de pequeños gastos frecuentes (gasto hormiga), con el importe límite configurable por el usuario.
 - Fases posteriores: automatización de captura en Android, despliegue en la nube, métricas avanzadas (suscripciones, comparativas) y vista de registro rápido en React.
 
 ## Autor
